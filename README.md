@@ -1,4 +1,4 @@
-# ShareX in Linux
+# ShareX for Linux
 
 
 ### <ins>Requirements
