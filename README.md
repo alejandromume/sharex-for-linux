@@ -19,6 +19,10 @@ cp sharenix-*/sharenix.json ~/.sharenix.json
 sharenix -h
 ```
 
+### <ins>Issues
+ 
+ * If you see that it throws a request error, just check if the image is uploaded and if is it, just ignore the message
+
 ### <ins>Steps
 
 * Open your `.sxcu` file and copy all the JSON 
@@ -94,3 +98,9 @@ sharenix -h
     ### <ins>Extra
 
 * Add some hotkeys for each function
+  * I'm using i3wm so I will add `ALT+SHIFT+X` for take a section screenshot
+  
+  ```
+  bindsym $mod+Shift+x exec sharenix-section -q
+  ```
+
