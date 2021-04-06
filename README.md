@@ -4,6 +4,8 @@
 * Added `install_sxcu.py` to simply add your `.sxcu` file path and it will add to your `~/.sharenix.json`
 * For add it to your path, move the `installer/install_sxcu` to `/usr/bin`
 
+![Prev](https://raw.githubusercontent.com/alejandromume/sharex-for-linux/main/installer/20203.png)
+
 
 ### <ins>Requirements
 
