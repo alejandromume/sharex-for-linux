@@ -34,19 +34,19 @@ sharenix -h
 * Open your `.sxcu` file and copy all the JSON 
 * Open `~/.sharenix.json`
 * Find `"DefaultImageUploader"` at the top and change it for the `"Name"` field 
-  * It will do it with [clippy.gg image uploder](https://clippy.gg) 
+  * It will do it with [file.coffee](https://file.coffee/) 
 
     <ins>Example
 
     ```
     // sxcu file
-    "Name": "clippy.gg file uploader",
+    "Name": "file.coffe",
 
     |   |
     V   V
 
     // ~/.sharenix.json
-    "DefaultImageUploader": "clippy.gg file uploader",
+    "DefaultImageUploader": "file.coffe",
     ```
 
 * Find something like this
@@ -73,19 +73,15 @@ sharenix -h
 
     ```json
     {
-  "Name": "clippy.gg file uploader",
-  "DestinationType": "ImageUploader, FileUploader",
-  "RequestType": "POST",
-  "RequestURL": "API URL",
-  "FileFormName": "file",
+  "Version": "13.0.1",
+  "Name": "file.coffee",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://file.coffee/api/v1/upload",
   "Body": "MultipartFormData",
-  "Headers": {
-    "key": "XXXXXXX"
-  },
-  "URL": "$json:imageUrl$",
-  "DeletionURL": "$json:deletionUrl$",
-  "ErrorMessage": "$json:error$"
-    }
+  "FileFormName": "file",
+  "URL": "$json:url$"
+}
     ```
 
 * Save the file 
